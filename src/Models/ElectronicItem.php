@@ -47,7 +47,7 @@ abstract class ElectronicItem implements ElectronicItemInterface
         try {
             $this->handleExtras($extras, $limit);
         } catch (\Exception $e) {
-            echo $e->getMessage() . '\n';
+            echo $e->getMessage();
         }
 
         $this->setType($type);
