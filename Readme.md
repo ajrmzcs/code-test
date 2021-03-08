@@ -10,7 +10,7 @@ Copyright (c) The PHP Group
 Zend Engine v4.0.3, Copyright (c) Zend Technologies
     with Zend OPcache v8.0.3, Copyright (c), by Zend Technologies
 ```
-TODO: Tests compatibility with other php versions.
+TODO: Test compatibility with additional php versions.
 
 ### Instalation steps
 1. clone this repo
