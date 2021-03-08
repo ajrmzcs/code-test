@@ -10,9 +10,6 @@ use App\Models\RemoteController;
 use App\Models\Microwave;
 use App\Models\WiredController;
 
-const REMOTE_CONTROLLER_TYPE = 'remote';
-const WIRED_CONTROLLER_TYPE = 'wired';
-
 try {
 
     // Create Extras
@@ -57,7 +54,7 @@ try {
     ]);
 
     $sortedItems = json_encode($personOneShoppingList->getSortedItems(), JSON_PRETTY_PRINT);
-    $totalPrice = number_format($personOneShoppingList->getTotalPaid(), 2, ',');
+    $totalPrice = number_format(($personOneShoppingList->getTotalPaid() / 100), 2);
 
     var_dump($sortedItems);
     echo "Total paid amount: $totalPrice";

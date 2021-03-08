@@ -87,7 +87,10 @@ class ElectronicItems
     public function getTotalPaid(): float
     {
         return array_reduce($this->items, function  ($carry, $item) {
-            $carry += $item->getPrice() / 100;
+            $carry += $item->getPrice();
+            foreach ($item->getExtras() as $extra) {
+                $carry += $extra->getPrice();
+            }
             return $carry;
         });
     }
