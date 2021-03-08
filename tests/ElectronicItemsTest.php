@@ -23,7 +23,7 @@ class ElectronicItemsTest extends BaseCase
 
     /** @test */
     public function it_calculates_total_purchase_amount() {
-        $total = $this->electronicItems->getTotalPaid();
+        $total = $this->electronicItems->getTotalPaid() / 100;
         $this->assertEquals(30, $total);
     }
 
