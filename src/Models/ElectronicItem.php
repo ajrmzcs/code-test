@@ -26,8 +26,6 @@ abstract class ElectronicItem implements ElectronicItemInterface
     /**
      * @var array
      */
-    public $remote;
-    public $wired;
     public $extras = [];
 
     /**
